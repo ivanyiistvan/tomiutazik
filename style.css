@@ -72,6 +72,18 @@ body {
 /* @end */
 
 /* @group Media Queries */
+@media screen and (min-width: 1024px) {
+	.counter {
+		font-size: 8em;
+	}
+	.msg {
+		font-size: 4em;
+	}
+	.wrapper {
+		top: 10%;
+	}
+}
+
 @media screen and (max-width: 600px) {
 	.counter {
 		font-size: 3em;
