@@ -43,10 +43,16 @@ body {
 	font-size: 5em;
 
 	-webkit-transform: rotate(15deg);
-	transform: rotate(15deg);
+		 -moz-transform: rotate(15deg);
+			-ms-transform: rotate(15deg);
+			 -o-transform: rotate(15deg);
+					transform: rotate(15deg);
 
 	-webkit-animation: flying 120s linear infinite;
-	animation: flying 120s linear infinite;
+		 -moz-animation: flying 120s linear infinite;
+			-ms-animation: flying 120s linear infinite;
+			 -o-animation: flying 120s linear infinite;
+					animation: flying 120s linear infinite;
 }
 /* @end */
 
@@ -58,6 +64,33 @@ body {
 	}
 	to {
 		-webkit-transform: rotate(15deg) translate(1500%,-1300%);
+	}
+}
+
+@-moz-keyframes flying {
+	from {
+		-moz-transform: rotate(15deg) translate(-120%,0%);
+	}
+	to {
+		-moz-transform: rotate(15deg) translate(1500%,-1300%);
+	}
+}
+
+@-ms-keyframes flying {
+	from {
+		-ms-transform: rotate(15deg) translate(-120%,0%);
+	}
+	to {
+		-ms-transform: rotate(15deg) translate(1500%,-1300%);
+	}
+}
+
+@-o-keyframes flying {
+	from {
+		-o-transform: rotate(15deg) translate(-120%,0%);
+	}
+	to {
+		-o-transform: rotate(15deg) translate(1500%,-1300%);
 	}
 }
 
