@@ -6,7 +6,8 @@ body {
 	overflow: hidden;
 	background: #66cc99;
 	color: #f2f2f2;
-	font-family: 'Open Sans', Helvetica;
+	font-family: 'Lato', Helvetica;
+	font-weight: 300;
 	text-shadow: 0 1px rgba(51,51,51,.5);
 }
 /* @end */
